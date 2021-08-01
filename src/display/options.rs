@@ -1,5 +1,5 @@
 pub struct Options {
-    content: Vec<String>,
+    pub content: Vec<String>,
 }
 
 impl Options {
