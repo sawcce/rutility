@@ -4,7 +4,7 @@ pub struct Options {
 
 impl Options {
     pub fn new() -> Options {
-        return Options {content: vec![]}
+        return Options {content: Vec::new()}
     }
 
     pub fn push(&mut self, content: String) {

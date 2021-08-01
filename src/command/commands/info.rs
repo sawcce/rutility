@@ -11,10 +11,8 @@ pub fn info() {
     section::section(
         "Info",
         format!(
-            "
-Version: 0.1,
-Time: {:?} (unix)
-    ",
+"Version: 0.1,
+Time: {:?} (unix)",
             time.as_millis()
         ),
         options,

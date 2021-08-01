@@ -1,6 +1,6 @@
 use crate::command::parse::CliArgs;
-use crate::display::section;
 use crate::display::options::Options;
+use crate::display::section;
 
 pub fn args(a: CliArgs) {
     let mut args = a;
@@ -12,13 +12,10 @@ pub fn args(a: CliArgs) {
         options.push(format!("Count: {}", count));
     }
 
-
     let body = format!(
-        "
-Comm: {:?}
+"Comm: {:?}
 Text: {:?}
-Opts: {:?}
-    ",
+Opts: {:?}",
         args.command,
         args.ids.join(" | "),
         args.options.join(" | "),
