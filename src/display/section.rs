@@ -1,10 +1,21 @@
 use crate::display::options::Options;
 
-/// Function to display in the console a section like
-/// --- Title ---
-/// ..content
-/// ...options
-/// ------
+/// Function to display a section in the console
+/// 
+/// # Example
+/// 
+/// ```
+/// use crate::display::options::Options;
+/// let options = Options::new();
+/// section("Info", "V.01", options);
+/// 
+/// ## Gives:
+/// 
+/// ```
+/// 
+/// --- Info ---
+/// 
+/// V.01
 pub fn section(title: &str, content: String, options: Options) {
     println!("--- {} ---", title);
     println!("{}", content);
